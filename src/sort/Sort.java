@@ -39,7 +39,6 @@ public class Sort {
 			j++;
 			k++;
 		}
-		System.out.println(Arrays.toString(arr));
 	}
 	
 	void mergeSort(int[] arr, int l, int r) {
@@ -50,7 +49,6 @@ public class Sort {
 			
 			merge(arr, l, m, r);
 		}
-		
 	}
 	
 	static void printArray(int[] arr) {
@@ -59,22 +57,15 @@ public class Sort {
 		}
 		System.out.println();
 	}
+        
 	public static void main(String[] args) {
 		int[] arr = {1, 3, 5, 4, 2, 6};
 		
+                //TODO : Print Array before Sorted
+                
 		Sort obj = new Sort();
 		obj.mergeSort(arr, 0, arr.length-1);
 		
-		System.out.println("Sorted Array: ");
-		Sort.printArray(arr);
+		//TODO : Print Array after Sorted
 	}
 }
-    
-    //public static void main(String[] args){
-      //  int[] arr = {7, 3, 10, 6, 9, 1, 8, 2, 4, 5};
-        //System.out.println("Array sebelum di Sorting: " + Arrays.toString(arr));
-        
-        //quickSort(arr);
-        //System.out.println("Array Setelah di Sorting: " + Arrays.toString(arr));
-    //}
-//}
