@@ -1,5 +1,4 @@
 package sort;
-import java.util.Arrays;
 public class Sort {
 
     void merge(int[] arr, int p, int q, int r) {
